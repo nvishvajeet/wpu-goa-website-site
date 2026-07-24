@@ -502,9 +502,9 @@
     {
       "route": "/events/inaugural-visioning-conference-wpu-goa/",
       "title": "Inaugural Visioning Conference",
-      "description": "",
+      "description": "Event record: Inaugural Visioning Conference.",
       "category": "Event",
-      "search_text": "inaugural visioning conference event"
+      "search_text": "inaugural visioning conference event record: inaugural visioning conference. event"
     },
     {
       "route": "/events/kavil-ramchandran/",
@@ -845,9 +845,9 @@
     {
       "route": "/events/leadership-that-delivers/",
       "title": "Leadership That Delivers",
-      "description": "",
+      "description": "Event record: Leadership That Delivers.",
       "category": "Event",
-      "search_text": "leadership that delivers event"
+      "search_text": "leadership that delivers event record: leadership that delivers. event"
     },
     {
       "route": "/academics/living-learning-societies/",
@@ -992,30 +992,30 @@
     {
       "route": "/news/topics/latest-news/",
       "title": "Latest news",
-      "description": "",
+      "description": "News topic: Latest news.",
       "category": "News topic",
-      "search_text": "latest news news topic"
+      "search_text": "latest news news topic: latest news. news topic"
     },
     {
       "route": "/news/topics/trending-news/",
       "title": "Selected stories",
-      "description": "",
+      "description": "News topic: Selected stories.",
       "category": "News topic",
-      "search_text": "selected stories news topic"
+      "search_text": "selected stories news topic: selected stories. news topic"
     },
     {
       "route": "/news/topics/upcoming-events/",
       "title": "Upcoming events",
-      "description": "",
+      "description": "News topic: Upcoming events.",
       "category": "News topic",
-      "search_text": "upcoming events news topic"
+      "search_text": "upcoming events news topic: upcoming events. news topic"
     },
     {
       "route": "/news/topics/campus-updates/",
       "title": "Campus updates",
-      "description": "",
+      "description": "News topic: Campus updates.",
       "category": "News topic",
-      "search_text": "campus updates news topic"
+      "search_text": "campus updates news topic: campus updates. news topic"
     },
     {
       "route": "/about/university-philosophy/",
