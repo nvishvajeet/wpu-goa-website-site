@@ -77,6 +77,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .header-inner {
   display: flex;
+  position: relative;
   align-items: center;
   gap: 1.35rem;
   min-width: 0;
@@ -228,6 +229,7 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
 .hero-media img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   object-fit: cover;
 }
@@ -588,7 +590,7 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
     scrollbar-width: thin;
   }
   .site-nav a { flex: 0 0 auto; white-space: nowrap; }
-  .theme-toggle { margin-left: auto; }
+  .theme-toggle { position: absolute; top: .8rem; right: 0; margin-left: auto; }
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-copy { padding-top: 1.5rem; }
   .hero-media { max-width: 40rem; width: 100%; }
