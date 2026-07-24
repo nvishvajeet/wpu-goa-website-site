@@ -444,6 +444,7 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
 .advisor-card img {
   display: block;
   width: 4.8rem;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border: 1px solid var(--line);
