@@ -1,6 +1,6 @@
 {
   "schema": "wpu-goa.search-index.v1",
-  "count": 156,
+  "count": 157,
   "records": [
     {
       "route": "/",
@@ -29,6 +29,13 @@
       "description": "Programme families, detailed programme pages, and the academic model at WPU Goa.",
       "category": "Academics",
       "search_text": "academics programme families, detailed programme pages, and the academic model at wpu goa. academics b.tech. in computer science & engineering bachelor of management studies (bms) (hons.) b.des. in integrated product design b.des. in communication design b.sc. (hons.) in psychology b.tech. in electronics and semiconductor engineering b.tech. in energy systems engineering b. des. interaction design b.sc. (hons.) in economics b.sc. (hons.) in film, media and communications the future of learning at wpu gōa one degree. many possibilities."
+    },
+    {
+      "route": "/academics/programmes/",
+      "title": "Programmes",
+      "description": "Undergraduate programmes in engineering, design, management, psychology, economics, and media at WPU Goa.",
+      "category": "Academics",
+      "search_text": "programmes undergraduate programmes in engineering design management psychology economics and media at wpu goa"
     },
     {
       "route": "/academics/programmes/bachelor-of-managementstudies/",

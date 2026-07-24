@@ -1,8 +1,8 @@
 {
   "indexing": "disabled",
   "referenced_assets": 73,
-  "routes": 169,
+  "routes": 171,
   "schema": "wpu-goa.public-artifact.v1",
-  "search_records": 156,
-  "source_commit": "c9117240fb7b5db3dfd061f853237c4ae5011ba1"
+  "search_records": 157,
+  "source_commit": "b5e32fd626bf2127eef63bba91a93b8b433eec4d"
 }
