@@ -233,6 +233,18 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
   aspect-ratio: 16 / 10;
   object-fit: cover;
 }
+.hero-media.portrait-media {
+  width: min(100%, 20rem);
+  justify-self: center;
+}
+.hero-media.portrait-media img {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.hero-media.low-resolution-media {
+  width: min(100%, 8rem);
+  justify-self: start;
+}
 .media-caption {
   margin: 0;
   padding: .65rem .8rem;
@@ -578,7 +590,7 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
 .site-footer p { max-width: 66ch; margin: .25rem 0; }
 .footer-links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; justify-content: flex-end; }
 
-@media (max-width: 82rem) {
+@media (max-width: 68rem) {
   .header-inner { align-items: flex-start; flex-wrap: wrap; padding-block: .8rem; }
   .site-nav {
     order: 3;
