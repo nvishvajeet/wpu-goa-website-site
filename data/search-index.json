@@ -1,6 +1,6 @@
 {
   "schema": "wpu-goa.search-index.v1",
-  "count": 157,
+  "count": 159,
   "records": [
     {
       "route": "/",
@@ -15,6 +15,20 @@
       "description": "The institutional history of MAEER’s MIT Group, founded in Pune in 1983.",
       "category": "About WPU Goa",
       "search_text": "about maeers group the institutional history of maeer’s mit group, founded in pune in 1983. about wpu goa the foundation legacy of 4 decades about maeer's legacy of 4 decades the founding father prof. dr. vishwanath d. karad ​ maeer's journey a pioneering institution of higher education with world-class academic standards,maeer's rich legacy dates back more than 40 years. visionaries of education: the birth of mit-wpu founding excellence: the inaugural years of mit (now mit-wpu) global recognition and cultural milestones: the institutional journey empowering excellence: a decade of achievements and impact expanding horizons: global vision and commitment to peace"
+    },
+    {
+      "route": "/about/founder/",
+      "title": "Prof. Dr. Vishwanath D. Karad",
+      "description": "Prof. Dr. Vishwanath D. Karad founded MAEER’s MIT Group of Institutions and MIT-WPU.",
+      "category": "Institutional legacy",
+      "search_text": "prof. dr. vishwanath d. karad founder of maeer’s mit group of institutions and founder president of mit-wpu. established maharashtra institute of technology in pune in 1983. education science peace world peace dome institutional roles founder chief patron chairman governing body."
+    },
+    {
+      "route": "/about/world-peace-dome/",
+      "title": "World Peace Dome",
+      "description": "The World Peace Dome is a MAEER peace monument at Vishwarajbaug, Loni Kalbhor, Pune.",
+      "category": "Institutional legacy",
+      "search_text": "world peace dome maeer peace monument vishwarajbaug loni kalbhor pune. philosopher saint shri dnyaneshwara world peace prayer hall world peace library 160-foot dome 3,000 people 54 bronze statues inaugurated 2 october 2018 prof. dr. vishwanath d. karad."
     },
     {
       "route": "/about/",
