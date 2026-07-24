@@ -144,7 +144,7 @@
     },
     {
       "route": "/admissions/assesment-framework/",
-      "title": "Assesment Framework",
+      "title": "Assessment Framework",
       "description": "Understand WPU Goa’s assessment framework based on academic performance, essays, interviews, and extracurriculars using a holistic ABC evaluation model.",
       "category": "Admissions",
       "search_text": "assesment framework understand wpu goa’s assessment framework based on academic performance, essays, interviews, and extracurriculars using a holistic abc evaluation model. admissions"
@@ -229,14 +229,14 @@
     {
       "route": "/research/centres/center-of-excellence-for-inclusive-innovation/",
       "title": "Centre of Excellence for Inclusive Innovation",
-      "description": "Get insights of the Center of Strategic Leadership and Organizational Governance at WPU Goa, developing future leaders through research, strategy, and governance excellence.",
+      "description": "The centre connects research, community knowledge and global practice to develop scalable, inclusive solutions for societal challenges.",
       "category": "Centre of Excellence",
       "search_text": "centre of excellence for inclusive innovation get insights of the center of strategic leadership and organizational governance at wpu goa, developing future leaders through research, strategy, and governance excellence. centre of excellence dr. raghunath mashelkar and prof. anil gupta rationale objectives mandate activities operational plan partnerships and alliances industry csr divisions, inclusive-tech companies, digital public infrastructure initiatives, social-impact incubators. academia institutions specialising in inclusive innovation, public policy, sustainability, systems thinking, and design research. government state innovation missions, rural livelihood programmes, ministries (msme, environment, education), local government bodies. community and civil society shgs, cooperatives, grassroots innovators, ngos, and rural and tribal communities linked to llscs. global networks frugal innovation labs, grassroots innovation networks, social enterprise ecosystems."
     },
     {
       "route": "/research/centres/center-of-strategic-leadership-and-organizational-governance/",
       "title": "Centre of Strategic Leadership and Organizational Governance",
-      "description": "Explore the Center of Transdisciplinary Research and Education at WPU Goa, integrating diverse disciplines to solve complex global challenges through innovation.",
+      "description": "The centre advances strategic leadership, execution and governance through research, training, simulations and institutional partnerships.",
       "category": "Centre of Excellence",
       "search_text": "centre of strategic leadership and organizational governance explore the center of transdisciplinary research and education at wpu goa, integrating diverse disciplines to solve complex global challenges through innovation. centre of excellence prof. ram charan key pillars and programme areas training programmes leadership and inner leadership youth engagement collaborations research pathways activities operational plan partnerships and alliances industry academia"
     },
