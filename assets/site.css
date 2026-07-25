@@ -88,6 +88,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   align-items: center;
   flex: 0 0 auto;
   padding: .4rem .55rem;
+  border: 1px solid rgb(0 53 149 / .22);
   border-radius: .15rem;
   background: #fff;
 }
