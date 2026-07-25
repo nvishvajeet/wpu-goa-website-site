@@ -217,6 +217,11 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
   border-color: var(--line);
   background: var(--surface);
 }
+.button.secondary:hover {
+  color: #fff;
+  border-color: #a10b31;
+  background: #a10b31;
+}
 .hero-media {
   position: relative;
   overflow: clip;
@@ -502,6 +507,9 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
   align-items: center;
   padding: 3.25rem .75rem .75rem;
 }
+.gallery-dialog-inner.is-single {
+  grid-template-columns: minmax(0, 1fr);
+}
 .gallery-dialog figure { min-width: 0; margin: 0; }
 .gallery-dialog img {
   display: block;
@@ -522,6 +530,11 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
   color: var(--ink);
   background: var(--surface);
   cursor: pointer;
+}
+.gallery-dialog button:hover {
+  color: #fff;
+  border-color: var(--goa-cobalt);
+  background: var(--goa-cobalt);
 }
 .gallery-dialog-close {
   position: absolute;

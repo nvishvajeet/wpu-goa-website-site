@@ -123,6 +123,12 @@
       close.className = "gallery-dialog-close";
       close.type = "button";
       close.textContent = "Close";
+      var hasMultipleImages = images.length > 1;
+      if (!hasMultipleImages) {
+        inner.classList.add("is-single");
+        previous.hidden = true;
+        next.hidden = true;
+      }
       inner.append(previous, display, next, close);
       dialog.appendChild(inner);
       document.body.appendChild(dialog);
@@ -164,12 +170,14 @@
         });
       });
 
-      previous.addEventListener("click", function () {
-        showImage(activeIndex - 1);
-      });
-      next.addEventListener("click", function () {
-        showImage(activeIndex + 1);
-      });
+      if (hasMultipleImages) {
+        previous.addEventListener("click", function () {
+          showImage(activeIndex - 1);
+        });
+        next.addEventListener("click", function () {
+          showImage(activeIndex + 1);
+        });
+      }
       close.addEventListener("click", function () {
         dialog.close();
       });
@@ -182,11 +190,11 @@
           dialog.close();
           return;
         }
-        if (event.key === "ArrowLeft") {
+        if (hasMultipleImages && event.key === "ArrowLeft") {
           event.preventDefault();
           showImage(activeIndex - 1);
         }
-        if (event.key === "ArrowRight") {
+        if (hasMultipleImages && event.key === "ArrowRight") {
           event.preventDefault();
           showImage(activeIndex + 1);
         }
