@@ -471,6 +471,71 @@ h4 { margin-bottom: .5rem; font-size: 1.12rem; }
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+.gallery-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  cursor: zoom-in;
+}
+.gallery-dialog {
+  width: min(calc(100% - 2rem), 72rem);
+  max-width: none;
+  max-height: calc(100dvh - 2rem);
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: .2rem;
+  color: var(--ink);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.gallery-dialog::backdrop {
+  background: rgb(8 20 45 / .82);
+  backdrop-filter: blur(3px);
+}
+.gallery-dialog-inner {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: .75rem;
+  align-items: center;
+  padding: 3.25rem .75rem .75rem;
+}
+.gallery-dialog figure { min-width: 0; margin: 0; }
+.gallery-dialog img {
+  display: block;
+  width: 100%;
+  max-height: calc(100dvh - 8rem);
+  object-fit: contain;
+}
+.gallery-dialog figcaption {
+  padding: .75rem .25rem .1rem;
+  color: var(--muted);
+  text-align: center;
+}
+.gallery-dialog button {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  background: var(--surface);
+  cursor: pointer;
+}
+.gallery-dialog-close {
+  position: absolute;
+  top: .65rem;
+  right: .65rem;
+  width: auto;
+  padding-inline: .9rem;
+  border-radius: .2rem !important;
+}
+.gallery-dialog-previous,
+.gallery-dialog-next {
+  font-size: 1.7rem;
+  line-height: 1;
+}
 .document-library {
   margin-top: 2rem;
   padding: clamp(1.25rem, 3vw, 2rem);

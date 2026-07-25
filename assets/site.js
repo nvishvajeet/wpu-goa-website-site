@@ -87,6 +87,116 @@
     }
   );
 
+  Array.prototype.forEach.call(
+    document.querySelectorAll(".evidence-gallery"),
+    function (gallery) {
+      var figures = Array.prototype.slice.call(gallery.querySelectorAll("figure"));
+      var images = figures.map(function (figure) {
+        return figure.querySelector("img");
+      }).filter(Boolean);
+      if (!images.length) return;
+
+      var dialog = document.createElement("dialog");
+      dialog.className = "gallery-dialog";
+      dialog.setAttribute(
+        "aria-label",
+        gallery.getAttribute("aria-label") || "Image gallery"
+      );
+
+      var inner = document.createElement("div");
+      inner.className = "gallery-dialog-inner";
+      var previous = document.createElement("button");
+      previous.className = "gallery-dialog-previous";
+      previous.type = "button";
+      previous.setAttribute("aria-label", "Previous image");
+      previous.textContent = "‹";
+      var display = document.createElement("figure");
+      var displayImage = document.createElement("img");
+      var caption = document.createElement("figcaption");
+      display.append(displayImage, caption);
+      var next = document.createElement("button");
+      next.className = "gallery-dialog-next";
+      next.type = "button";
+      next.setAttribute("aria-label", "Next image");
+      next.textContent = "›";
+      var close = document.createElement("button");
+      close.className = "gallery-dialog-close";
+      close.type = "button";
+      close.textContent = "Close";
+      inner.append(previous, display, next, close);
+      dialog.appendChild(inner);
+      document.body.appendChild(dialog);
+
+      var activeIndex = 0;
+      var activeTrigger = null;
+
+      function showImage(index) {
+        activeIndex = (index + images.length) % images.length;
+        var source = images[activeIndex];
+        var sourceFigure = source.closest("figure");
+        var sourceCaption = sourceFigure
+          ? sourceFigure.querySelector("figcaption")
+          : null;
+        displayImage.src = source.currentSrc || source.src;
+        displayImage.alt = source.alt;
+        caption.textContent = sourceCaption ? sourceCaption.textContent : source.alt;
+      }
+
+      function openImage(index, trigger) {
+        showImage(index);
+        activeTrigger = trigger;
+        if (typeof dialog.showModal === "function") {
+          dialog.showModal();
+        } else {
+          window.open(displayImage.src, "_blank", "noopener");
+        }
+      }
+
+      images.forEach(function (image, index) {
+        var trigger = document.createElement("button");
+        trigger.className = "gallery-trigger";
+        trigger.type = "button";
+        trigger.setAttribute("aria-label", "Open image: " + image.alt);
+        image.parentNode.insertBefore(trigger, image);
+        trigger.appendChild(image);
+        trigger.addEventListener("click", function () {
+          openImage(index, trigger);
+        });
+      });
+
+      previous.addEventListener("click", function () {
+        showImage(activeIndex - 1);
+      });
+      next.addEventListener("click", function () {
+        showImage(activeIndex + 1);
+      });
+      close.addEventListener("click", function () {
+        dialog.close();
+      });
+      dialog.addEventListener("click", function (event) {
+        if (event.target === dialog) dialog.close();
+      });
+      dialog.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          event.preventDefault();
+          dialog.close();
+          return;
+        }
+        if (event.key === "ArrowLeft") {
+          event.preventDefault();
+          showImage(activeIndex - 1);
+        }
+        if (event.key === "ArrowRight") {
+          event.preventDefault();
+          showImage(activeIndex + 1);
+        }
+      });
+      dialog.addEventListener("close", function () {
+        if (activeTrigger) activeTrigger.focus();
+      });
+    }
+  );
+
   var form = document.querySelector("[data-search-form]");
   var input = document.querySelector("[data-search-input]");
   var results = document.querySelector("[data-search-results]");
